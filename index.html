@@ -1,0 +1,52 @@
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title"> Formulário de Registro</h1>
+    <p id="description">Por favor preencha todos os dados solicitados!</p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Nome: <input placeholder="digite aqui seu nome"  id="name" name="name" type="text" required> </label>
+      
+      <label  id="email-label" for="email">E-mail:</label>
+        <input placeholder="digite seu email aqui"  type="email" id="email" name="email" required></input> 
+        <label id="number-label" for="number">Número (entre 1 e 100):</label>
+        <input placeholder="Número" type="number" id="number" name="number" min="1" max="100" required>
+        <label for="dropdown">Escolha uma opção:</label>
+        <select id="dropdown" name="opcao">
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+            <option value="opcao3">Opção 3</option>
+        </select>
+        <br>
+
+        <label>Selecione uma das opções:</label>
+        <input type="radio" id="opcao1" name="opcoes" value="opcao1">
+        <label for="opcao1">Opção 1</label>
+        <input type="radio" id="opcao2" name="opcoes" value="opcao2">
+        <label for="opcao2">Opção 2</label>
+        <input type="radio" id="opcao3" name="opcoes" value="opcao3">
+        <label for="opcao3">Opção 3</label>
+        <br>
+
+        <label>Selecione várias opções:</label>
+        <input type="checkbox" id="checkbox1" name="checkboxes" value="checkbox1">
+        <label for="checkbox1">Opção 1</label>
+        <input type="checkbox" id="checkbox2" name="checkboxes" value="checkbox2">
+        <label for="checkbox2">Opção 2</label>
+        <input type="checkbox" id="checkbox3" name="checkboxes" value="checkbox3">
+        <label for="checkbox3">Opção 3</label>
+        <br>
+
+        <label for="comentarios">Comentários adicionais:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+  </body>
+  </html>
